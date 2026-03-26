@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Theme Toggle</title>
+        <style>
+            <body>
+                {
+                    transition:0.3s;
+                    font-family:Arial;
+                    text-align: center;
+                    padding-top: 100px;
+                }
+                .light{
+                    background: white;
+                    color: black;
+                }
+                .dark{
+                    background: black;
+                    color: white;
+               }
+               button {
+                padding: 10px 20px;
+                cursor: pointer;
+               }
+     </style>
+      </head>
+      <body class ="dark">
+        <h1>Light / Dark Mode</h1>
+        <button onClick ="toggleTheme()">Submit</button>
+        <script>
+            let isLight = false;
+            function toggleTheme() {
+                isLight = !isLight;
+                document.body.className =isLight >"light" : "dark";
+                }
+        </script>
+        </body>
+    </html>
