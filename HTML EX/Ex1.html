@@ -1,0 +1,31 @@
+<html>
+<head>
+</head><body>
+   <script>
+let arr = [];
+let n= prompt("How many values?");
+for (let i=0;i<n;i++)
+{
+    arr[i]=prompt ("Enter value");
+}
+let count = 0;
+for(let i in arr){
+    count ++;
+}
+console.log("Array length:",count);
+let search=prompt("Enter value to find:");
+let found = false;
+for(let i=0;i<count;i++){
+    if(arr[i]==search){
+console.log("Found at index:",i);
+found=true;
+break;
+}
+}
+if (!found)
+{
+    console.log("Not found");
+}
+</script> 
+</body>
+</html>

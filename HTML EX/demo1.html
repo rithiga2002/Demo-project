@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Result</title>
+</head>
+<body>
+
+<h2>Merged Array Result</h2>
+
+<p id="output"></p>
+
+<script>
+let arr1 = [153, 121, 10];
+let arr2 = [7, 9, 22];
+
+let merged = arr1.concat(arr2);
+
+let result = "Merged Array: " + merged + "<br><br>";
+
+for (let i = 0; i < merged.length; i++) {
+    let num = merged[i];
+
+    result +="<b> Number: </b>" + num + "<br>";
+    if (num % 2 === 0) {
+        result += "Even <br>";
+    } else {
+        result += "Odd <br>";
+    }
+    let original = num;
+    let rev = 0;
+    let temp = num;
+    while (temp > 0) {
+        rev = rev * 10 + (temp % 10);
+        temp = Math.floor(temp / 10);
+    }
+
+    if (num === rev) {
+        result += "Palindrome<br>";
+    } else {
+        result += "Not Palindrome<br>";
+    }
+    let sum = 0;
+    temp = num;
+    let len = num.toString().length;
+
+    while (temp > 0) {
+        let d = temp % 10;
+        sum += d ** len;
+        temp = Math.floor(temp / 10);
+    }
+
+    if (sum === num) {
+        result += "Armstrong <br>";
+    } else {
+        result += "Not Armstrong <br>";
+    }
+
+    result += "<br>";
+}
+document.getElementById("output").innerHTML = result;
+</script>
+
+</body>
+</html>
