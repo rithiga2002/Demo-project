@@ -1,0 +1,95 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#fdf3e7;
+  color:#333;
+}
+
+/* NAVBAR */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  background:#fff;
+  position:sticky;
+  top:0;
+}
+
+nav a{
+  margin:0 10px;
+  text-decoration:none;
+  color:black;
+}
+
+.btn{
+  background:#c49b63;
+  color:white;
+  padding:5px 10px;
+  border-radius:5px;
+}
+
+/* HOME */
+.home{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:50px;
+}
+
+.home-text h1 span{
+  color:#c49b63;
+}
+
+.home-img img{
+  border-radius:30%;
+}
+
+/* SECTIONS */
+section{
+  padding:50px;
+  text-align:center;
+}
+
+/* BOX */
+.box-container{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.box{
+  padding:20px;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 0 10px #ddd;
+}
+
+/* FORM */
+form{
+  display:flex;
+  flex-direction:column;
+  width:300px;
+  margin:auto;
+}
+
+input, textarea{
+  margin:10px 0;
+  padding:10px;
+}
+
+button{
+  background:#c49b63;
+  color:white;
+  border:none;
+  padding:10px;
+}
+.hero img {
+  width: 300px;
+  height: auto;
+}
